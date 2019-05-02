@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("<head>\n");
+      out.write("  <title>Hostel Management</title>\n");
+      out.write("  <meta charset=\"utf-8\">\n");
+      out.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n");
+      out.write("  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css\">\n");
+      out.write("  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n");
+      out.write("  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js\"></script>\n");
+      out.write("  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js\"></script>\n");
+      out.write("  <style>\n");
+      out.write("      body{\n");
+      out.write("          background-image: url(\"y.jpg\");background-repeat:no-repeat;background-size:cover;\n");
+      out.write("          font-family:monospace;\n");
+      out.write("   \t }\n");
+      out.write("      .carousel-inner img {\n");
+      out.write("      width: 100%;\n");
+      out.write("      height: 100%;\n");
+      out.write("  }\n");
+      out.write("  .login{\n");
+      out.write("          width: 50%;\n");
+      out.write("    left:25%;\n");
+      out.write("    position: relative;\n");
+      out.write("    color:white;\n");
+      out.write("  }\n");
+      out.write("  .google{\n");
+      out.write("   \t\t    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n");
+      out.write("\t\t    background: #df4930;\n");
+      out.write("    \t    padding: 8px 21px;\n");
+      out.write("\t\t    color: white;\n");
+      out.write("\t\t    text-decoration: none;\n");
+      out.write("            border-radius: 5px; \n");
+      out.write("   \t}\n");
+      out.write("   \t.google i{\n");
+      out.write("   \t\t    text-decoration: none;\n");
+      out.write("\t\t    font-size: 15px;\n");
+      out.write("\t\t    color: #e01515;\n");
+      out.write("\t\t    padding: 4px 8px 5px 7px;\n");
+      out.write("\t\t    box-sizing: border-box;\n");
+      out.write("\t\t    background: white;\n");
+      out.write("\t\t    margin-left: -11px;\n");
+      out.write("\t\t    border-radius: 3px;\n");
+      out.write("   \t}\n");
+      out.write("\t.facebook{\n");
+      out.write("\t\t    font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;\n");
+      out.write("\t\t    background: #3b5998;\n");
+      out.write("\t\t    color: white;\n");
+      out.write("\t    \tpadding: 8px 21px;\n");
+      out.write("\t\t    text-decoration: none;\n");
+      out.write("\t\t    border-radius: 5px; \n");
+      out.write("\t}\n");
+      out.write("   \t.facebook i{\n");
+      out.write("   \t\t    text-decoration: none;\n");
+      out.write("\t\t    font-size: 15px;\n");
+      out.write("\t\t    color: #3a66ad;\n");
+      out.write("\t\t    padding: 4px 8px 5px 7px;\n");
+      out.write("\t\t    box-sizing: border-box;\n");
+      out.write("\t\t    background: white;\n");
+      out.write("\t\t    margin-left: -11px;\n");
+      out.write("\t\t    border-radius: 3px;\n");
+      out.write("   \t}\n");
+      out.write("   \t.left{\n");
+      out.write("        margin: 32px;\n");
+      out.write("\t    position: relative;\n");
+      out.write("\t    width: 40%;\n");
+      out.write("\t    float: left;\n");
+      out.write("\t    text-align: center;\n");
+      out.write("   \t}\n");
+      out.write("        .left_google i{\n");
+      out.write("   \t\tfloat: left;\n");
+      out.write("   \t}\n");
+      out.write("   \t.left_google a{\n");
+      out.write("\t    width: 30%;\n");
+      out.write("    \tdisplay: inline-block;  \n");
+      out.write("    \ttext-align: center;\n");
+      out.write("    \tline-height: 1.5;\n");
+      out.write("   \t}\n");
+      out.write("   \t.left_google a:last-child{\n");
+      out.write("\t\t\tmargin-top: 20px;\n");
+      out.write("   \t} \n");
+      out.write("        .btn{\n");
+      out.write("            color:white;\n");
+      out.write("            font-size: 20px;\n");
+      out.write("        }\n");
+      out.write("        .login-check{\n");
+      out.write("            color:white;\n");
+      out.write("            font-size: 22px;\n");
+      out.write("        }\n");
+      out.write("        a{\n");
+      out.write("            text-decoration: none;\n");
+      out.write("        }\n");
+      out.write("        a:hover{\n");
+      out.write("            color:white;\n");
+      out.write("        }\n");
+      out.write("  </style>\n");
+      out.write("</head>\n");
+      out.write("\n");
+      out.write(" \n");
+      out.write("     <div class=\"container-fluid\" style=\"background-color:#2f3640;position:fixed;\">\n");
+      out.write("         <center><h1><font color=\"white\">Hostel Management System</font></h1></center>\n");
+      out.write("     </div>\n");
+      out.write("<nav class=\"navbar bg-dark navbar-dark\" style=\"z-index: 1;\n");
+      out.write("    position: fixed;\">\n");
+      out.write("    <a class=\"navbar-brand\" href=\"#\" style=\"\">\n");
+      out.write("    <img src=\"h.png\" alt=\"logo\" style=\"width:27px;\"></a>\n");
+      out.write("    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">\n");
+      out.write("    <span class=\"navbar-toggler-icon\"></span>\n");
+      out.write("  </button>\n");
+      out.write("    <nav class=\"navbar navbar-expand-sm bgk nabvar-dark\">\n");
+      out.write("  <ul class=\"navbar-nav\">\n");
+      out.write("    <li class=\"nav-item\">\n");
+      out.write("      \n");
+      out.write("    </li>\n");
+      out.write("  </ul>\n");
+      out.write("    </nav>\n");
+      out.write("    \n");
+      out.write("    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n");
+      out.write("  <ul class=\"navbar-nav\">\n");
+      out.write("    \n");
+      out.write("    <li class=\"nav-item\">\n");
+      out.write("      <a class=\"nav-link\" href=\"index.html\">Dashboard</a>\n");
+      out.write("    </li>\n");
+      out.write(" \n");
+      out.write("    <li class=\"nav-item\">\n");
+      out.write("      <a class=\"nav-link\" href=\"#\">Profile</a>\n");
+      out.write("    </li>\n");
+      out.write("    <li class=\"nav-item\">\n");
+      out.write("      <a class=\"nav-link\" href=\"Complaint.html\">Complaint</a>\n");
+      out.write("    </li>\n");
+      out.write("  </ul>\n");
+      out.write("    </div>\n");
+      out.write("</nav>\n");
+      out.write("<br>\n");
+      out.write("<meta charset=\"utf-8\">\n");
+      out.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("<meta name=\"keywords\" content=\"Slide Login Form template Responsive, Login form web template, Flat Pricing tables, Flat Drop downs Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design\" />\n");
+      out.write("\n");
+      out.write("\t <script>\n");
+      out.write("        addEventListener(\"load\", function () {\n");
+      out.write("            setTimeout(hideURLbar, 0);\n");
+      out.write("        }, false);\n");
+      out.write("\n");
+      out.write("        function hideURLbar() {\n");
+      out.write("            window.scrollTo(0, 1);\n");
+      out.write("        }\n");
+      out.write("    </script>\n");
+      out.write("\n");
+      out.write("\t<!-- Custom Theme files -->\n");
+      out.write("\t<link href=\"css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
+      out.write("\t<!-- //Custom Theme files -->\n");
+      out.write("\n");
+      out.write("\t<!-- web font -->\n");
+      out.write("\t<link href=\"//fonts.googleapis.com/css?family=Hind:300,400,500,600,700\" rel=\"stylesheet\">\n");
+      out.write("\t<!-- //web font -->\n");
+      out.write("\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
+      out.write("\n");
+      out.write("<!-- main -->\n");
+      out.write("<div class=\"login\"> \n");
+      out.write("\t<div class=\"bg-layer\">\n");
+      out.write("            <br>\n");
+      out.write("            <br>\n");
+      out.write("            <br>\n");
+      out.write("            <center><h1> Login form</h1>\n");
+      out.write("\t\t<div class=\"header-main\">\n");
+      out.write("\t\t\t<div class=\"main-icon\">\n");
+      out.write("\t\t\t\t<span class=\"fa fa-eercast\"></span>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("                   \n");
+      out.write("\t\t\t<div class=\"header-left-bottom\">\n");
+      out.write("\t\t\t\t<form action=\"login\" method=\"post\">\n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("                                        <span class=\"form-group-addon\"><i class=\"glyphicon glyphicon-user\"></i></span>\n");
+      out.write("                                        <input id=\"email\" type=\"text\" class=\"form-control\" name=\"email\" placeholder=\"Email\">\n");
+      out.write("                                      </div>\n");
+      out.write("                                    \n");
+      out.write("\t\t\t\t\t<div class=\"form-group\">\n");
+      out.write("                                            <span class=\"fa fa-lock\">\n");
+      out.write("                                                <i class=\"glyphicon glyphicon-user\"></i>\n");
+      out.write("                                            </span>\n");
+      out.write("\t\t\t\t\t\t<input id=\"password\" type=\"password\" name =\"password\" class=\"form-control\" placeholder=\"Password\" required=\"\"/>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"login-check\">\n");
+      out.write("\t\t\t\t\t\t <label class=\"checkbox\"><input type=\"checkbox\" name=\"checkbox\" checked=\"\"><i> </i> Keep me logged in</label>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"bottom\">\n");
+      out.write("\t\t\t\t\t\t<input type=\"submit\" class=\"btn\" value=\"Login\">\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<div class=\"links\">\n");
+      out.write("\t\t\t\t\t\t<p><a href=\"#\">Forgot Password?</a></p>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t<div class=\"clear\"></div>\n");
+      out.write("                                        </div>\n");
+      out.write("\t\t\t\t</form>\t\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t <div class=\"left_google\">\n");
+      out.write("                 <ul class=\"social\" style=\"display:grid\">\n");
+      out.write("                 <h3>Catch on Social</h3>\n");
+      out.write("               <a class = \"google\" href=\"#\">\n");
+      out.write("                   <i class=\"fa fa-google\">\n");
+      out.write("                   </i>Continue with Google</a>\n");
+      out.write("               <a class= \"facebook\" href=\"#\">\n");
+      out.write("                   <i class=\"fa fa-facebook\">\n");
+      out.write("                   </i>Continue with Facebook</a>\n");
+      out.write("            </div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("</div>\t\n");
+      out.write("</center>\n");
+      out.write("        </body>\n");
+      out.write("        </html>\n");
+      out.write("\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
